@@ -27,6 +27,11 @@ See the Service Installer [Release Notes](WhatsNew.md) for the following:
 - A summary of what's new in this release.
 - Link to download the Service Installer OVA for this release.
 
+## Prerequistes for Deploying Service Installer for VMware Tanzu
+
+- A VMware vSphere environment. You will deploy Service Installer using the vSphere Client. 
+- A port group vSphere to use when installing the Service Installer. 
+
 ## Deploy Service Installer for VMware Tanzu
 
 Before you install Service Installer, ensure that you have created a management port group in vSphere. 
@@ -37,7 +42,7 @@ Before you install Service Installer, ensure that you have created a management 
 3. Go to **Actions > Deploy OVF Template** to start the OVF template deployment wizard.
    - Select the **Local file** option to upload the Service Installer OVA. 
    - Provide the required computer resources and storage details.
-   - Under **Select networks**, for **Appliance Network**, select the management port group.
+   - Under **Select networks**, for **Appliance Network**, select the port group you created for Service Installer.
    - Specify the NTP server and the root password for the VM.
 
    After the system configuration completes, the OVA deployment begins.
@@ -51,8 +56,7 @@ You can access the Service Installer UI at `http://<Service-Installer-VM-IP>:888
 To access the Service Installer CLI, log in over SSH. Enter `ssh root@<Service-Installer-VM-IP>`.
 
 ## Documentation
-<!-- - What's new in this release: [What's New](./WhatsNew.md)./-->
-Instructions to run the Service Installer for VMware Tanzu for Kubernetes Operations:
+The following provide instructions to run the Service Installer for VMware Tanzu for Kubernetes Operations:
 
 - [Deploying VMware Tanzu for Kubernetes Operations on VMware Cloud on AWS Using Service Installer for VMware Tanzu](./VMware%20Cloud%20on%20AWS%20-%20VMC/TKOonVMConAWS.md)
 - [Deploying VMware Tanzu for Kubernetes Operations on vSphere with NSX-T Using Service Installer for VMware Tanzu](./vSphere%20-%20Backed%20by%20NSX-T/tkoVsphereNSXT.md)
