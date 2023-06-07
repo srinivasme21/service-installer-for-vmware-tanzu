@@ -7,7 +7,7 @@ The following new features and support are added in 2.2.0.1:
 
 - Support for v1alpha3 APIs on vSphere 8.0 for TKG service deployments.
 
-This release resolves the follwoing issues:
+This release resolves the following issues:
 
 - Deployments of TKG Service using Tanzu Standard License with 60 days Evaluation mode are allowed.
 - UI: Fixes on Configure and Upload flows for VMC.
@@ -17,10 +17,10 @@ The following new features and support are added in 2.2.0.
 
 - Service Installer for VMware Tanzu (SIVT) adds support for the following:
   - Tanzu Kubernetes Grid (TKG) 2.2.0.
-  - NSX ALB Essentials license in addition to the existing support for the Enterprise license for Tanzu Kubernetes Grid (TKG) stanadalone management and Supervisor on VDS platforms.
+  - NSX ALB Essentials license in addition to the existing support for the Enterprise license for Tanzu Kubernetes Grid (TKG) standalone management and Supervisor on VDS platforms.
   - Version control for the deployment JSON file generated from the SIVT user interface.
   - TKG 2.1.1 for non-compliant deployment on AWS and TKG 1.6.1 (FIPS) for compliant deployment.
-- Use of TMC APIs for TMC related operatons. This release does not use TMC CLI. 
+- Use of TMC APIs for TMC related operations. This release does not use TMC CLI. 
   - TMC API code changes are ported to VMC along with other code enhancements.
   - TMC API: Worker node count passed as control plane node count to API payload for shared and workload cluster.
 
